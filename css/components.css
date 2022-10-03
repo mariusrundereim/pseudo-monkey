@@ -1,0 +1,9 @@
+code {
+    color: var(--main_color_dark);
+    background-color: var(--secondary_color_light);
+}
+
+hr {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}

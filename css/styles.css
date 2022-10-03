@@ -70,3 +70,39 @@ body {
 }
 
 
+
+
+
+
+/** EXPERIMENT - 1 **/
+
+
+.experiment-1-main, .experiment-2-main {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.experiment-1-main > article > h1::first-letter {
+    color: var(--contrast_color);
+    background-color: var(--main_color_dark);
+}
+
+/** EXPERIMENT - 2 **/
+
+.experiment-2-main > section {
+    color: var(--secondary_color_light);
+    background-color: var(--main_color_dark);
+    /**/
+    display: inline-block;
+    padding: 2rem;
+}
+
+
+.experiment-2-main > section::before {
+    content: 'Do you have a question?';
+}
+
+.experiment-2-main > section::after {
+    content: 'I am not sure, Arnold';
+}
