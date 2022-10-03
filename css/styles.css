@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+}
+
+:root {
+    
+    --main_color: #66D8FC;
+    --main_color_dark: #221438;
+    --secondary_color: #FC669C;
+    --secondary_color_light: #FFAECB;
+    --contrast_color: #56ED80;
+}
+
+
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: #E5E7EC;
+}
+
+/** PAGE HEADER **/
+
+.page-logo {
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+}
+
+.page-header > main {
+    color: #66D8FC;
+    background-color: #221438;
+    min-height: 7rem;
+    /**/
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.page-header > nav {
+    background-color: white;
+    min-height: 3rem;
+    /**/
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Menu */
+
+.main-menu > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 2rem;
+    list-style: none;
+}
+
+.main-menu > ul > li > a {
+    color: var(--main_color_dark);
+    font-weight: 500;
+    text-decoration: none;
+    transition: 200ms ease;
+}
+
+.main-menu > ul > li > a:hover {
+    color: var(--main_color);
+    font-weight: 800;
+    background-color: var(--main_color_dark);
+    padding: 1rem;
+}
+
+
