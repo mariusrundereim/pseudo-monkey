@@ -70,6 +70,26 @@ body {
 }
 
 
+/** HOME **/
+
+.hero-home {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.hero-home > article {
+    display: flex;
+    flex-direction: column;
+    min-height: 15rem;
+    justify-content: space-between;
+}
+
+
+
+.hero-home > article > article {
+    max-width: 70rem;
+}
 
 
 
@@ -77,7 +97,7 @@ body {
 /** EXPERIMENT - 1 **/
 
 
-.experiment-1-main, .experiment-2-main {
+.experiment-1-main, .experiment-2-main, .experiment-3-main, .experiment-4-main, .experiment-5-main, .experiment-6-main {
     max-width: 90%;
     margin: 0 auto;
     margin-top: 5rem;
@@ -105,4 +125,35 @@ body {
 
 .experiment-2-main > section::after {
     content: 'I am not sure, Arnold';
+}
+
+/** EXPERIMENT - 3 **/
+
+.experiment-3-main > main > .nummer-felt {
+    background-color: white;
+    padding: .5rem 1rem;
+    border: var(--main_color) solid 2px;
+    font-size: 1.4rem;
+}
+
+/** EXPERIMENT - 4 **/
+
+.experiment-4-main > blockquote {
+    position: relative;
+}
+
+.experiment-4-main > blockquote::before {
+    content: open-quote;
+    top: 0;
+    left: 0;
+    color: var(--contrast_color);
+    font-size: 3rem;
+}
+
+.experiment-4-main > blockquote::after {
+    content: close-quote;
+    bottom: 0;
+    right: 0;
+    color: var(--contrast_color);
+    font-size: 3rem;
 }
