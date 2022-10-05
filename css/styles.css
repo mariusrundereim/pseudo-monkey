@@ -4,11 +4,18 @@
 
 :root {
     
+    /* Smooth Colors */
     --main_color: #66D8FC;
     --main_color_dark: #221438;
     --secondary_color: #FC669C;
     --secondary_color_light: #FFAECB;
     --contrast_color: #56ED80;
+
+    /* Smooth Colors */
+    --light-turq: #BFE4EF;
+    --light-blue: #D4D4D6;
+    --light-pink: #F5DCE5;
+    --light-green: #ACEDBE;
 }
 
 
@@ -91,6 +98,112 @@ body {
     max-width: 70rem;
 }
 
+/** NTH - 1 **/
+
+.nth-1-main {
+    margin-top: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /**/
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    column-gap: 2rem;
+}
+
+.nth-1-main > section > ol {
+    padding-top: 1rem;
+}
+
+.nth-1-main > section > ol > li {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.nth-1-main > section > ol > li:nth-child(even) {
+    background-color: var(--secondary_color_light);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+
+.desc-1 {
+    background-color: var(--light-blue);
+    padding: 1rem;
+}
+
+/* Football Matches */
+
+
+.match-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.match-block {
+    background-color: var(--light-blue);
+
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    margin: .4rem;
+}
+
+
+.pl-logo {
+    width: 8rem;
+}
+
+.football-matches > header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.football-matches > header > h4 {
+    color: var(--main_color_dark);
+    font-weight: 400;
+}
+
+.info-match-date p {
+    font-size: 1rem;
+}
+
+.info-match p {
+    font-size: 1rem;
+}
+.info-match, .info-match-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+
+/*
+.match-list > .match-block:nth-child(4n){
+    border: var(--secondary_color) 2px solid;
+    background-color: rgba(252, 102, 156, 0.2);
+}
+*/
+
+
+.match-list > .match-block:nth-child(1){
+    border: var(--contrast_color) 2px solid;
+    background-color: rgba(86, 237, 128, 0.2);
+}
+
+.match-list > .match-block:nth-child(even){
+    border: var(--secondary_color) 2px solid;
+    background-color: rgba(252, 102, 156, 0.2);
+}
+
+/*
+.match-list > .match-block:nth-child(odd){
+    border: var(--main_color_dark) 2px solid;
+    background-color: rgba(34, 20, 56, 0.2);
+}
+*/
+
 
 
 
@@ -157,3 +270,5 @@ body {
     color: var(--contrast_color);
     font-size: 3rem;
 }
+
+
