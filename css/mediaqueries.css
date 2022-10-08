@@ -1,0 +1,22 @@
+@media screen and (max-width: 1100px) {
+
+    .main-menu > ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    /** HOME **/
+    /** NTH - 1 **/
+
+    .nth-1-main {
+        grid-template-columns: 1fr;
+    }
+
+    /* Football Matches */
+
+    .match-list {
+        grid-template-columns: 1fr;
+    }
+
+}
