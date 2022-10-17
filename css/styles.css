@@ -11,11 +11,17 @@
     --secondary_color_light: #FFAECB;
     --contrast_color: #56ED80;
 
+<<<<<<< Updated upstream
     /* Smooth Colors */
     --light-turq: #BFE4EF;
     --light-blue: #D4D4D6;
     --light-pink: #F5DCE5;
     --light-green: #ACEDBE;
+=======
+    /* Width */
+    --page-container: calc(100% - 8rem);
+    
+>>>>>>> Stashed changes
 }
 
 
@@ -30,6 +36,8 @@ body {
 .page-logo {
     font-family: 'Bangers', cursive;
     font-size: 3rem;
+    text-decoration: none;
+    color: var(--main_color);
 }
 
 .page-header > main {
@@ -204,8 +212,13 @@ body {
 }
 */
 
+/************* Global *************/
 
-
+.page-container {
+    border: 1px red dashed;
+    width: var(--page-container);
+    margin: 0 auto;
+}
 
 /** EXPERIMENT - 1 **/
 
