@@ -267,3 +267,9 @@ nav > ul > li > a:hover {
   color: var(--contrast_color);
   font-size: 3rem;
 }
+
+/************** LAB 2 **************/
+
+.exp-lab02-1:has(+ p) {
+  color: var(--contrast_color);
+}
