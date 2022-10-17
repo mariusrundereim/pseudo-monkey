@@ -1,190 +1,172 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 :root {
-    
-    /* Smooth Colors */
-    --main_color: #66D8FC;
-    --main_color_dark: #221438;
-    --secondary_color: #FC669C;
-    --secondary_color_light: #FFAECB;
-    --contrast_color: #56ED80;
+  /* Smooth Colors */
+  --main_color: #66d8fc;
+  --main_color_dark: #221438;
+  --secondary_color: #fc669c;
+  --secondary_color_light: #ffaecb;
+  --contrast_color: #56ed80;
 
-<<<<<<< Updated upstream
-    /* Smooth Colors */
-    --light-turq: #BFE4EF;
-    --light-blue: #D4D4D6;
-    --light-pink: #F5DCE5;
-    --light-green: #ACEDBE;
-=======
-    /* Width */
-    --page-container: calc(100% - 8rem);
-    
->>>>>>> Stashed changes
+  /* Width */
+  --width: calc(100% - 10rem);
 }
 
-
-
 body {
-    font-family: 'Figtree', sans-serif;
-    background-color: #E5E7EC;
+  font-family: "Figtree", sans-serif;
+  background-color: #e5e7ec;
 }
 
 /** PAGE HEADER **/
 
 .page-logo {
-    font-family: 'Bangers', cursive;
-    font-size: 3rem;
-    text-decoration: none;
-    color: var(--main_color);
+  font-family: "Bangers", cursive;
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--main_color);
 }
 
-.page-header > main {
-    color: #66D8FC;
-    background-color: #221438;
-    min-height: 7rem;
-    /**/
-    display: grid;
-    justify-content: center;
-    align-content: center;
+.page-header > a {
+  background-color: #221438;
+  min-height: 7rem;
+  /**/
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 .page-header > nav {
-    background-color: white;
-    min-height: 3rem;
-    /**/
-    display: grid;
-    justify-content: center;
-    align-content: center;
+  background-color: white;
+  min-height: 3rem;
+  /**/
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Menu */
 
-.main-menu > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    gap: 2rem;
-    list-style: none;
+  gap: 2rem;
+  list-style: none;
 }
 
-.main-menu > ul > li > a {
-    color: var(--main_color_dark);
-    font-weight: 500;
-    text-decoration: none;
-    transition: 200ms ease;
+nav > ul > li > a {
+  color: var(--main_color_dark);
+  font-weight: 500;
+  text-decoration: none;
+  transition: 200ms ease;
 }
 
-.main-menu > ul > li > a:hover {
-    color: var(--main_color);
-    font-weight: 800;
-    background-color: var(--main_color_dark);
-    padding: 1rem;
+nav > ul > li > a:hover {
+  color: var(--main_color);
+  font-weight: 800;
+  background-color: var(--main_color_dark);
+  padding: 1rem;
 }
-
 
 /** HOME **/
 
 .hero-home {
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: 4rem;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 4rem;
 }
 
 .hero-home > article {
-    display: flex;
-    flex-direction: column;
-    min-height: 15rem;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  min-height: 15rem;
+  justify-content: space-between;
 }
 
-
-
 .hero-home > article > article {
-    max-width: 70rem;
+  max-width: 70rem;
 }
 
 /** NTH - 1 **/
 
 .nth-1-main {
-    margin-top: 4rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    /**/
-    display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
-    column-gap: 2rem;
+  margin-top: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  /**/
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  column-gap: 2rem;
 }
 
 .nth-1-main > section > ol {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .nth-1-main > section > ol > li {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .nth-1-main > section > ol > li:nth-child(even) {
-    background-color: var(--secondary_color_light);
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+  background-color: var(--secondary_color_light);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-
 .desc-1 {
-    background-color: var(--light-blue);
-    padding: 1rem;
+  background-color: var(--light-blue);
+  padding: 1rem;
 }
 
 /* Football Matches */
 
-
 .match-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .match-block {
-    background-color: var(--light-blue);
+  background-color: var(--light-blue);
 
-    flex-direction: column;
-    padding: 1rem 1.5rem;
-    border-radius: .5rem;
-    margin: .4rem;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: 0.4rem;
 }
 
-
 .pl-logo {
-    width: 8rem;
+  width: 8rem;
 }
 
 .football-matches > header {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 .football-matches > header > h4 {
-    color: var(--main_color_dark);
-    font-weight: 400;
+  color: var(--main_color_dark);
+  font-weight: 400;
 }
 
 .info-match-date p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .info-match p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
-.info-match, .info-match-date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: .5rem;
+.info-match,
+.info-match-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /*
@@ -194,15 +176,14 @@ body {
 }
 */
 
-
-.match-list > .match-block:nth-child(1){
-    border: var(--contrast_color) 2px solid;
-    background-color: rgba(86, 237, 128, 0.2);
+.match-list > .match-block:nth-child(1) {
+  border: var(--contrast_color) 2px solid;
+  background-color: rgba(86, 237, 128, 0.2);
 }
 
-.match-list > .match-block:nth-child(even){
-    border: var(--secondary_color) 2px solid;
-    background-color: rgba(252, 102, 156, 0.2);
+.match-list > .match-block:nth-child(even) {
+  border: var(--secondary_color) 2px solid;
+  background-color: rgba(252, 102, 156, 0.2);
 }
 
 /*
@@ -214,74 +195,75 @@ body {
 
 /************* Global *************/
 
-.page-container {
-    border: 1px red dashed;
-    width: var(--page-container);
-    margin: 0 auto;
+.p-width {
+  width: var(--width);
+  border: green 2px dotted;
+  margin: 0 auto;
 }
 
 /** EXPERIMENT - 1 **/
 
-
-.experiment-1-main, .experiment-2-main, .experiment-3-main, .experiment-4-main, .experiment-5-main, .experiment-6-main {
-    max-width: 90%;
-    margin: 0 auto;
-    margin-top: 5rem;
+.experiment-1-main,
+.experiment-2-main,
+.experiment-3-main,
+.experiment-4-main,
+.experiment-5-main,
+.experiment-6-main {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem;
 }
 
 .experiment-1-main > article > h1::first-letter {
-    color: var(--contrast_color);
-    background-color: var(--main_color_dark);
+  color: var(--contrast_color);
+  background-color: var(--main_color_dark);
 }
 
 /** EXPERIMENT - 2 **/
 
 .experiment-2-main > section {
-    color: var(--secondary_color_light);
-    background-color: var(--main_color_dark);
-    /**/
-    display: inline-block;
-    padding: 2rem;
+  color: var(--secondary_color_light);
+  background-color: var(--main_color_dark);
+  /**/
+  display: inline-block;
+  padding: 2rem;
 }
 
-
 .experiment-2-main > section::before {
-    content: 'Do you have a question?';
+  content: "Do you have a question?";
 }
 
 .experiment-2-main > section::after {
-    content: 'I am not sure, Arnold';
+  content: "I am not sure, Arnold";
 }
 
 /** EXPERIMENT - 3 **/
 
 .experiment-3-main > main > .nummer-felt {
-    background-color: white;
-    padding: .5rem 1rem;
-    border: var(--main_color) solid 2px;
-    font-size: 1.4rem;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border: var(--main_color) solid 2px;
+  font-size: 1.4rem;
 }
 
 /** EXPERIMENT - 4 **/
 
 .experiment-4-main > blockquote {
-    position: relative;
+  position: relative;
 }
 
 .experiment-4-main > blockquote::before {
-    content: open-quote;
-    top: 0;
-    left: 0;
-    color: var(--contrast_color);
-    font-size: 3rem;
+  content: open-quote;
+  top: 0;
+  left: 0;
+  color: var(--contrast_color);
+  font-size: 3rem;
 }
 
 .experiment-4-main > blockquote::after {
-    content: close-quote;
-    bottom: 0;
-    right: 0;
-    color: var(--contrast_color);
-    font-size: 3rem;
+  content: close-quote;
+  bottom: 0;
+  right: 0;
+  color: var(--contrast_color);
+  font-size: 3rem;
 }
-
-
