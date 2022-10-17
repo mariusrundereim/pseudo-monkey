@@ -12,11 +12,55 @@
 
   /* Width */
   --width: calc(100% - 10rem);
+
+  /* Gap */
+  --gap1: 1rem;
+  --gap2: 1.5rem;
+  --gap3: 2rem;
+
+  /* Padding*/
+  --pad1: 1rem;
+  --pad2: 1.5rem;
+  --pad3: 2rem;
+
 }
 
 body {
   font-family: "Figtree", sans-serif;
   background-color: #e5e7ec;
+}
+
+/************* RAMMEVERK *************/
+
+.gap1 {
+    gap: var(--gap1);
+}
+
+.gap2 {
+    gap: var(--gap2);
+}
+
+.gap3 {
+    gap: var(--gap3);
+}
+
+.pad1 {
+    padding: var(--pad1);
+}
+
+.pad2 {
+    padding: var(--pad2);
+}
+
+.pad3 {
+    padding: var(--pad3);
+}
+
+/************* GLOBAL *************/
+
+.grid-two-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /** PAGE HEADER **/
@@ -270,6 +314,11 @@ nav > ul > li > a:hover {
 
 /************** LAB 2 **************/
 
-.exp-lab02-1:has(+ p) {
-  color: var(--contrast_color);
+/*
+.lab02-experiment1 > article > h1 {
+    color: red;
+}*/
+
+.lab02-experiment1 > article > h1:has(+h3) {
+    color: blue;
 }
