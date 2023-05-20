@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -22,7 +23,6 @@
   --pad1: 1rem;
   --pad2: 1.5rem;
   --pad3: 2rem;
-
 }
 
 body {
@@ -33,34 +33,34 @@ body {
 /************* RAMMEVERK *************/
 
 .gap1 {
-    gap: var(--gap1);
+  gap: var(--gap1);
 }
 
 .gap2 {
-    gap: var(--gap2);
+  gap: var(--gap2);
 }
 
 .gap3 {
-    gap: var(--gap3);
+  gap: var(--gap3);
 }
 
 .pad1 {
-    padding: var(--pad1);
+  padding: var(--pad1);
 }
 
 .pad2 {
-    padding: var(--pad2);
+  padding: var(--pad2);
 }
 
 .pad3 {
-    padding: var(--pad3);
+  padding: var(--pad3);
 }
 
 /************* GLOBAL *************/
 
 .grid-two-col {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /** PAGE HEADER **/
@@ -245,6 +245,41 @@ nav > ul > li > a:hover {
   margin: 0 auto;
 }
 
+.wrapper {
+  width: min(100% - 1rem, 80rem);
+  margin-inline: auto;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+/* Home */
+
+.teest {
+  border: 1px solid red;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.code-example {
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  border: 3px solid var(--secondary_color);
+  background: var(--secondary_color_light);
+}
+
+@media screen and (max-width: 440px) {
+  .code-example {
+    font-size: 1.5rem;
+    padding: 3px 8px;
+  }
+}
+
 /** EXPERIMENT - 1 **/
 
 .experiment-1-main,
@@ -319,6 +354,6 @@ nav > ul > li > a:hover {
     color: red;
 }*/
 
-.lab02-experiment1 > article > h1:has(+h3) {
-    color: blue;
+.lab02-experiment1 > article > h1:has(+ h3) {
+  color: blue;
 }
